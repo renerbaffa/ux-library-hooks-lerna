@@ -3,9 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "button": "0.0.1",
-    "input": "0.0.1",
-    "counter": "0.0.1",
+    "components-lib": "0.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"

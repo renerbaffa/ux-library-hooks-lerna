@@ -1,6 +1,5 @@
 import React from 'react';
-import Button from 'button'
-import Input from 'input'
+import { Button, Input } from 'components-lib'
 import Counter from 'counter'
 
 import './App.css';
