@@ -1,7 +1,7 @@
 {
   "name": "components-lib",
   "author": "Rener Baffa da Silva <renerbaffa@gmail.com>",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/index.js",
   "scripts": {
     "test": "jest"

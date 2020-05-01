@@ -1,9 +1,9 @@
 {
   "name": "frontend",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "dependencies": {
-    "components-lib": "0.0.1",
+    "components-lib": "^0.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
