@@ -5,8 +5,12 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "lerna exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.spec.js",
-    "bootstrap": "lerna bootstrap --use-workspaces"
+    "build": "yarn build:counter && yarn build:components-lib && yarn build:frontend",
+    "build:counter": "cd packages/counter && babel ./src -d lib --ignore **/*.spec",
+    "build:components-lib": "cd packages/components-lib && babel ./src -d lib --ignore **/*.spec",
+    "build:frontend": "cd packages/frontend && yarn build",
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "list:dependencies": "lerna ls --all --graph"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -16,6 +20,7 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-styled-components": "^1.10.7",
+    "express": "^4.17.1",
     "lerna": "^3.20.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
