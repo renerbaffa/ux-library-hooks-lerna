@@ -1,9 +1,7 @@
-import React from 'react';
+import React from 'react'
 import { Button, Input } from 'components-lib'
 import Counter from 'counter'
-
-import './App.css';
-console.log(Button, Input)
+import { withProviders } from 'providers/withProviders'
 
 function App() {
   return (
@@ -18,4 +16,4 @@ function App() {
   )
 }
 
-export default App;
+export default withProviders(App)
