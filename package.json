@@ -10,7 +10,8 @@
     "build:components-lib": "cd packages/components-lib && babel ./src -d lib --ignore **/*.spec",
     "build:frontend": "cd packages/frontend && yarn build",
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "list:dependencies": "lerna ls --all --graph"
+    "list:dependencies": "lerna ls --all --graph",
+    "start": "node index.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
